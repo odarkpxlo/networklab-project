@@ -1,0 +1,24 @@
+NetworkLab - Ping Test Results and Notes
+Author: Atussa
+
+----------------------------------------
+1. PC1 -> PC2 : ✅ Ping Successful
+2. PC1 -> Router (192.168.1.1) : ✅ Ping Successful
+3. PC1 -> Server (192.168.1.100) : ✅ Ping Successful
+4. PC1 -> pc2.local : ✅ Ping Successful
+
+5. PC2 -> PC1 : ✅ Ping Successful
+6. PC2 -> Router (192.168.1.1) : ✅ Ping Successful
+7. PC2 -> Server (192.168.1.100) : ✅ Ping Successful
+8. PC2 -> pc1.local : ✅ Ping Successful
+
+9. Server -> PC1 : ✅ Ping Successful
+10. Server -> PC2 : ✅ Ping Successful
+11. Server -> Router (192.168.1.1) : ✅ Ping Successful
+
+----------------------------------------
+Notes:
+- All devices can communicate properly within the LAN.
+- DNS resolution tested using pc1.local and pc2.local.
+- Network is stable and functional.
+- No connectivity issues observed.
