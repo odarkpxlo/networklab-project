@@ -1,0 +1,40 @@
+! =====================================
+! NetworkLab - CLI Configuration
+! Author: Atussa
+! =====================================
+
+! -------------------
+! Switch Configuration
+! -------------------
+enable
+configure terminal
+hostname Switch1
+
+! VLAN 1 configuration
+interface vlan 1
+ ip address 192.168.1.2 255.255.255.0
+ no shutdown
+exit
+
+! Default gateway
+ip default-gateway 192.168.1.1
+
+! Save configuration
+end
+write memory
+
+! -------------------
+! Router Configuration
+! -------------------
+enable
+configure terminal
+hostname R1
+
+interface GigabitEthernet0/0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+exit
+
+! Save configuration
+end
+write memory
